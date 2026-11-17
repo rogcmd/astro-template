@@ -1,0 +1,19 @@
+/* --general styles page-- */
+@import "./reset.css";
+
+h1,h2,h3,h4,h5,h6 {
+  text-box: trim-both cap alpha;
+  font-family: var(--display);
+}
+
+*:not(h1,h2,h3,h4,h5,h6) {
+  font-family: var(--text);
+}
+
+* {
+  color:#1E1F24;
+}
+
+body {
+  background-color: #FCFCFD;
+}
