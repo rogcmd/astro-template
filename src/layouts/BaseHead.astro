@@ -4,6 +4,7 @@ import '~/style/styles.css'
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const {pageTitle} = Astro.props
+const { url, site } = Astro;
 ---
 
 <html lang="en">
