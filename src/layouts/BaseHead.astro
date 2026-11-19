@@ -4,7 +4,6 @@ import '~/style/styles.css'
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const {pageTitle} = Astro.props
-const { url, site } = Astro;
 ---
 
 <html lang="en">
@@ -19,9 +18,10 @@ const { url, site } = Astro;
   <meta name="generator" content={Astro.generator} />
 
   <!-- opengraph -->
+  <meta property="og:site_name" content="my awesome site" />
   <meta property="og:title" content={pageTitle} />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content={url.href} />
+  <meta property="og:url" content={canonicalURL} />
 
   <Font cssVariable="--text" preload />
   <Font cssVariable="--display" preload />
