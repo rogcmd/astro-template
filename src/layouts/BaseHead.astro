@@ -17,6 +17,11 @@ const {pageTitle} = Astro.props
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
 
+  <!-- opengraph -->
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={url.href} />
+
   <Font cssVariable="--text" preload />
   <Font cssVariable="--display" preload />
 
