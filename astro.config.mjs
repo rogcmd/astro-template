@@ -15,10 +15,13 @@ if (isBuild) {
 // @ts-check
 import { defineConfig, fontProviders } from "astro/config";
 
+import sitemap from "@astrojs/sitemap";
+
 export default defineConfig({
   server: { port: SERVER_PORT },
   site: BASE_URL,
   base: REPO,
+
   fonts: [
     {
       provider: fontProviders.google(),
@@ -37,4 +40,6 @@ export default defineConfig({
       fallbacks: ["system-ui"],
     },
   ],
+
+  integrations: [sitemap()]
 });

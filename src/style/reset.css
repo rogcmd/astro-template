@@ -28,9 +28,9 @@ html {
 }
 
 body {
-  min-height: 100svh; /* Increase line-height */
-  line-height: 1.5;   /* Improve text rendering */
-  -webkit-font-smoothing: antialiased;
+  min-height: 100svh; 
+  line-height: 1.5; /* Increase line-height */ 
+  -webkit-font-smoothing: antialiased; /* Improve text rendering */
 }
 
 /* Improve media defaults */
